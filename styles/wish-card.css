@@ -1,0 +1,121 @@
+li{
+    list-style-type: none;
+}
+.wishes-containter{
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: white;
+}
+
+.wishes-list{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    height: 300px;
+}
+
+.wish-card{
+    display: none;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    max-width: 90%;
+}
+.wishes-holder{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start; 
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.avatar, .wishes-holder {
+    height: 15rem;
+    width: 50%;
+}
+
+.btn-holder .btn {
+  top: 0;
+  left: 0;
+  height: 20px;
+  width: 20px;
+  background-color: #eee;
+  border-radius: 50%;
+}
+
+
+.wishes-containter .title{
+  font-family: 'Syne Mono', monospace;
+  font-size: 35px;
+  text-align: center;
+}
+
+.wishes-containter .btn-holder{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  width: 5%;
+}
+
+.avatar{
+    width: 15rem;
+    box-shadow: 2px 6px lightgray;
+}
+
+.wishes-text{
+    font-size: 1.1rem;
+    font-family: 'Syne Mono', monospace;
+}
+
+.wishes-header{
+    font-size: 1.5rem;
+    font-weight: bold;
+    font-family: 'Syne Mono', monospace;
+}
+
+.wishes-footer{
+    font-size: 1rem;
+    align-self: flex-end;
+    font-family: 'Syne Mono', monospace;
+}
+
+
+.text-focus-in {
+	-webkit-animation: text-focus-in 0.75s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+	animation: text-focus-in 0.75s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+}
+ @-webkit-keyframes text-focus-in {
+    0% {
+      -webkit-filter: blur(12px);
+              filter: blur(12px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-filter: blur(0px);
+              filter: blur(0px);
+      opacity: 1;
+    }
+  }
+  @keyframes text-focus-in {
+    0% {
+      -webkit-filter: blur(12px);
+              filter: blur(12px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-filter: blur(0px);
+              filter: blur(0px);
+      opacity: 1;
+    }
+  }
+  

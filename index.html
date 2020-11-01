@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- FONT STYLE -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Syne+Mono&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Sacramento&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Charmonman:wght@700&display=swap" rel="stylesheet">
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- EXTERNAL CSS FILE -->
+    <link rel="stylesheet" href="./styles/index.css">
+    <link rel="stylesheet" href="./styles/wish-card.css">
+    <link rel="stylesheet" href="./styles/gratitude.css">
+    <link rel="stylesheet" href="./styles/book.css">
+
+    <!-- EXTERNAL JS FILE -->
+    <script src="./scripts/index.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <span class="header-text text-focus-in">20.11</span>
+        </header>
+        <div class="content-group">
+            <div class="landing-img">
+                <h1 class='landing-title text-focus-in'>Chào mừng ngày nhà giáo Việt Nam 20/11</h1>
+                <span class="landing-text text-focus-in">Hôm nay là ngày 20-11 – Ngày nhà giáo Việt Nam. Con xin gửi lời chúc tới thầy và cô, chúc thầy/cô ngập tràn sức khỏe, may mắn và
+                thành công trong cuộc sống, thành công trong việc nuôi dạy chúng con trở thành những công dân tốt có ích cho xã hội.</span>
+                <svg class='wave' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+                    <path fill="#fff" fill-opacity="1"
+                        d="M0,32L34.3,69.3C68.6,107,137,181,206,192C274.3,203,343,149,411,112C480,75,549,53,617,53.3C685.7,53,754,75,823,101.3C891.4,128,960,160,1029,176C1097.1,192,1166,192,1234,186.7C1302.9,181,1371,171,1406,165.3L1440,160L1440,320L1405.7,320C1371.4,320,1303,320,1234,320C1165.7,320,1097,320,1029,320C960,320,891,320,823,320C754.3,320,686,320,617,320C548.6,320,480,320,411,320C342.9,320,274,320,206,320C137.1,320,69,320,34,320L0,320Z">
+                    </path>
+                </svg>
+            </div>
+            <div class="wishes-containter">
+                <h1 class="title text-focus-in">Lời chúc đến thầy/cô</h1>
+                <ul class="wishes-list">
+                    <li class="wish-card">
+                        <img src="assets/avatar.jpg" alt="avatar" class="avatar">
+                        <div class='wishes-holder'>
+                            <span class="wishes-header">Nguyễn Thuý Hằng</span>
+                            <span class='wishes-text'>Xin gửi những lời chúc 20/11 hay nhất chân thành nhất từ đáy lòng đến các thầy cô: Luôn giữ vững tình cảm: yêu trò, yêu
+                            nghề; Giữ vững hơn nữa bản lĩnh nghề nghiệp: làm việc tận tâm, tận lực; Không ngừng trau dồi, học hỏi, nâng cao năng lực
+                            giảng dạy và sẵn sàng cách tân, đổi mới sáng tạo phương pháp giảng dạy. Vui vẻ và hạnh phúc trong ngày này, luôn là tấm
+                            gương sáng về đức và tài trong mắt học trò và được hết thảy mọi người yêu quý.</span>
+                            <span class="wishes-footer">CNNT-K22</span>
+                        </div>
+                    </li>
+                    <li class="wish-card">
+                        <img src="assets/avatar_2.jpg" alt="avatar" class="avatar">
+                        <div class='wishes-holder'>
+                            <span class="wishes-header">Lê Bảo Nam</span>
+                            <span class='wishes-text'>Chúc mừng tất cả các thầy cô giáo. Chúc các thầy cô thật nhiều sức khỏe, niềm vui và hạnh phúc. Kính tặng các thấy cô
+                            những bông hoa tươi thắm nhất!.</span>
+                            <span class="wishes-footer ">CNNT-K21</span>
+                        </div>
+                    </li>
+                    <li class="wish-card">
+                        <img src="assets/avatar_3.jpg" alt="avatar" class="avatar">
+                        <div class='wishes-holder'>
+                            <span class="wishes-header ">Trần Nguyễn Thảo Uyên</span>
+                            <span class='wishes-text'>Nhân ngày Nhà Giáo Việt Nam 20/11, em xin gửi đến thầy cô lời cảm ơn chân thành đã dìu dắt chúng em đễn gần hơn với chân
+                            trời kiến thức. Kính chúc quý thầy cô luôn luôn mạnh khỏe và hạnh phúc để luôn mang đến cho chúng em ngày càng nhiều bài
+                            học hay và bổ ích.</span>
+                            <span class="wishes-footer">KTCT-K22</span>
+                        </div>
+                    </li>
+                </ul>
+                <div class="btn-holder">
+                    <input type="radio" value="1" checked name="wishes-list" class='btn' onclick="handleChangeRadio(this.value)">
+                    <input type="radio" value="2" name="wishes-list" class='btn' onclick="handleChangeRadio(this.value)">
+                    <input type="radio" value="3" name="wishes-list" class='btn' onclick="handleChangeRadio(this.value)">
+                </div>
+            </div>
+            <div class="gratitude-list">
+                <div class="img">
+                    <div class="card">
+                        <h1 class="title">Thầy Cô</h1>
+                        <span class="text">là nguồn cảm hứng, là người dẫn đường, mở lối cho chúng ta đến với ước mơ, những khát khao tuổi trẻ và mở ra cho
+                        chúng ta cả một chân trời tri thức. Ngày Nhà giáo Việt Nam 20/11 chính là cơ hội để chúng ta nghĩ sâu hơn về những công
+                        ơn thầm lặng của các thầy, các cô.</span>
+                    </div>
+                </div>
+            </div>
+            <div class="book-container">
+                <div class="book">
+                    <div class="page-wrapper-1">
+                        <div class="page-1 text-focus-in">
+                            <span class="title">Tri ân Thầy Cô 20/11</span>
+                        </div>
+                        <div class="page-2 text-focus-in">
+                            <h1 class="title">Tri ân thầy cô</h1>
+                            <span class="content">Nhân ngày nhà giáo Việt Nam 20/11, với tất cả tấm chân tình mà con muốn gửi đến thầy cô,
+                                kính chúc tất cả thầy cô luôn
+                                vui vẻ tràn ngập niềm tin trong cuộc sống, ngày nào cũng luôn gặp may mắn và thành công trên con đường dạy
+                                học của mình,
+                                dìu dắt những học trò của mình thật tốt để sau này giúp đời.</span>
+                            <img src="assets/flower.png" />
+                        </div>
+                    </div>
+                    <div class="page-wrapper-2">
+                        <div class="page-3 text-focus-in">
+                            <span class="content">Thầy/Cô đã cho em những giấc mơ về sự thành đạt, về công danh, sự nghiệp và cả niềm tin mãnh liệt vào cuộc sống. Xin
+                            kính chúc Thầy/Cô luôn mạnh khoẻ, hạnh phúc và vững bước trong sự nghiệp trồng người.</span>
+                            <img src="assets/21.jpeg" alt="">
+                        </div>
+                        <div class="page-4 text-focus-in">
+                            <div class="content-holder">
+                                <span class="text">"Mãi mãi bên con tiếng của thầy vang vọng. Đã xa rồi mà con ngỡ hôm qua. 
+                                Bài giảng của thầy như chắp cánh ước mơ, cho
+                                con bay khỏi vùng trời cổ tích"</span>
+                            </div>
+                            <div class="reverse-content">
+                                <span class='text'>2</span>
+                                <span class='text'>0</span>
+                                <span class='text'>.</span>
+                                <span class='text'>1</span>
+                                <span class='text'>1</span>
+                                <span class='text'>.</span>
+                                <span class='text'>2</span>
+                                <span class='text'>0</span>
+                                <span class='text'>2</span>
+                                <span class='text'>0</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <div class='content-holder'>
+                <span id="icon-name" class="block">Nguyễn Thuý Hằng</span>
+                <span class="block">51800378</span>
+            </div>
+            <img style="width: 120px;
+                height: auto;" src="https://iconclub.github.io/assets/iconLogo.png"
+                alt="ICON">
+        </footer>
+    </div>
+</body>
+</html>
